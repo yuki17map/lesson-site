@@ -1,0 +1,202 @@
+/* --------------------
+   基本設定
+-------------------- */
+:root {
+  --brand: #0d6efd;
+  --brand-dark: #0056b3;
+  --bg: #f9f9f9;
+  --text: #222;
+  --muted: #555;
+  --max-width: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+}
+
+/* --------------------
+   ヘッダー
+-------------------- */
+.site-header {
+  background-color: var(--brand);
+  color: #fff;
+  padding: 20px 0;
+}
+.site-header .inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+.site-header .tagline {
+  font-size: 1em;
+  margin: 5px 0 0;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.nav a.btn {
+  background-color: #fff;
+  color: var(--brand);
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.nav a.btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* --------------------
+   ヒーローセクション
+-------------------- */
+.hero {
+  background-color: #eaf4ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.hero p.lead {
+  font-size: 1.2em;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+.hero-ctas a {
+  display: inline-block;
+  margin: 0 10px 10px;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero-ctas a.btn.large {
+  background-color: var(--brand);
+  color: #fff;
+}
+.hero-ctas a.btn.large:hover {
+  background-color: var(--brand-dark);
+}
+.hero-ctas a.btn.outline {
+  background-color: #fff;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+}
+.hero-ctas a.btn.outline:hover {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+/* --------------------
+   セクション共通
+-------------------- */
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.section.gray {
+  background-color: #f0f0f0;
+}
+.section h3 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+.section ul, .section dl {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.section ul li, .section dl dt, .section dl dd {
+  margin-bottom: 10px;
+}
+
+/* --------------------
+   会場・申込カード
+-------------------- */
+.venue-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.venue {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.venue h4 {
+  margin-top: 0;
+}
+.venue p.small {
+  color: var(--muted);
+  font-size: 0.9em;
+}
+.apply-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.apply-grid .card {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1 1 250px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.apply-grid .card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* --------------------
+   ボタン共通
+-------------------- */
+.btn {
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* --------------------
+   フッター
+-------------------- */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
